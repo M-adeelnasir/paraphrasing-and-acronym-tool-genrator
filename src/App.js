@@ -129,8 +129,10 @@ export default function ParaphrasingTool() {
             </Grid>
           </Grid>
 
+          <img src={require('./pic.png')} className="img-thumbnail w-50 mt-5" alt="" />
         </div>
       </Container>
+
 
     </div>
   );

@@ -37,11 +37,11 @@ class SubmitButton extends Component {
     render() {
         const { loading } = this.state;
         return (
-            <Box flexWrap="wrap" alignItems="center">
+            <Box flexWrap="wrap" >
                 {
                     loading ?
                         <CircularProgress color="primary" />
-                        : <Button onClick={this.handleSubmit} disabled={loading} variant="contained" color="primary" style={{ fontFamily: 'Poppins, sans-serif', fontSize: '16px' }}>Rewrite</Button>
+                        : <div className='d-flex justify-content-center'><Button onClick={this.handleSubmit} disabled={loading} variant="contained" style={{ fontFamily: 'Poppins, sans-serif', fontSize: '18px' }} className="rounded-pill pt-2 pb-2 pl-5 pr-5 text-center btn-primary">Go<i className="fa fa-paper-plane-o pl-2"></i> </Button> </div>
                 }
             </Box>
 
